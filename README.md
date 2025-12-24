@@ -39,7 +39,7 @@ Follow these steps to run the application locally:
    ```
 2. **Clone the repository**
     ```bash
-   composer install --optimize-autoloader --no-dev
+   composer install 
    ```
 3. **Install and build frontend assets (Tailwind CSS)**
    ```bash
@@ -76,7 +76,7 @@ Comprehensive unit and feature tests are included:
 
 Run them optionally with:
 ```bash
-   php artisan test
+   ./vendor/bin/phpunit
 ```
 
 **And see all tests pass.**
