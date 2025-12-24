@@ -1,0 +1,25 @@
+<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\OilChange>
+ */
+class OilChangeFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'current_odometer' => $this->faker->numberBetween(1000, 10000),
+            'previous_odometer' => $this->faker->numberBetween(1000, 10000),
+            'previous_date' => $this->faker->date(),
+        ];
+    }
+}
